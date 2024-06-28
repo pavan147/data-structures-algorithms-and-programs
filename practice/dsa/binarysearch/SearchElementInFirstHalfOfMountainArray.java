@@ -1,5 +1,10 @@
 package practice.dsa.binarysearch;
 
+/**
+ * int arr[] = {1, 2, 3, 4, 5, 3, 2, 1};
+ *         int target = 3;
+ *         o/p : index 2
+ */
 public class SearchElementInFirstHalfOfMountainArray {
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 5, 3, 2, 1};
