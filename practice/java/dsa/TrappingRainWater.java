@@ -23,17 +23,17 @@ public class TrappingRainWater {
         int[] leftArray = new int[length];
         int[] rightArray = new int[length];
 
-        // Fill leftArray with the max values from the left
+        // Fill leftArray with the max values from the left to right
         leftArray[0] = numArray[0];
         for (int i = 1; i < length; i++) {
             leftArray[i] = Math.max(leftArray[i - 1], numArray[i]);
         }
-
+        //fill the rightArrya with max value right to left
         rightArray[length - 1] = numArray[length - 1];
         for (int i = length - 2; i >= 0; i--) {
             rightArray[i] = Math.max(rightArray[i + 1], numArray[i]);
         }
-
+        //ten from both array right and left get min value
         for (int i = 0; i < length; i++) {
             int min = Math.min(leftArray[i], rightArray[i]);
             int waterRetainOnBlock = min - numArray[i];

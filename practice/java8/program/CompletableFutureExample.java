@@ -39,9 +39,9 @@ public class CompletableFutureExample {
         allFutures.thenRun(() -> {
             try {
                 // Retrieve results from each future
-                String result1 = future.get();
-                String result2 = future2.get();
-                String result3 = future3.get();
+                String result1 = future.get();  //name
+                String result2 = future2.get(); //middle
+                String result3 = future3.get();  //surname
 
                 // Process the results
                 fullName(result1, result2, result3);
@@ -57,7 +57,7 @@ public class CompletableFutureExample {
         // Calculate the duration
         long durationInNano = endTime - startTime;
 
-        System.out.println("Total time for Completable future "+durationInNano);
+        System.out.println("Total time for Completable future " + durationInNano);
         // Record the start time
         long startTime1 = System.nanoTime();
         // Retrieve results from each future
@@ -74,7 +74,7 @@ public class CompletableFutureExample {
         // Calculate the duration
         long durationInNano1 = endTime1 - startTime1;
 
-        System.out.println("Total time for Normal call "+durationInNano1);
+        System.out.println("Total time for Normal call " + durationInNano1);
     }
 
     public static String name() throws InterruptedException {

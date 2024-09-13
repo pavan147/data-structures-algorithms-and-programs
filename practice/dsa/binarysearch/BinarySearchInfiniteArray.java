@@ -2,8 +2,8 @@ package practice.dsa.binarysearch;
 
 public class BinarySearchInfiniteArray {
     public static void main(String[] args) {
-        int arr[] = {1, 4, 6, 9, 11, 14, 16, 19, 21, 26, 27, 29, 30, 31, 32, 42, 54, 65, 87, 90};
-        int target = 30;
+        int arr[] = {1, 4, 6, 9, 11, 14, 16, 19, 21, 26, 27, 29, 30, 31, 32, 42, 54, 65, 87, 90,100,111,112,113,114,115,116,117,118,119,220,221};
+        int target = 221;
 
         System.out.println(arr[findEndAndReturnAnswer(arr, target)]);
     }
@@ -16,8 +16,9 @@ public class BinarySearchInfiniteArray {
             int newStart = end + 1;
             // double the box value
             // end = previous end + sizeofbox*2
-            end = end + (start - end + 1) * 2;
-            start = newStart;
+          end = end + (end - start +1) *2;
+          start = newStart;
+
         }
         return binarySearch(arr, target, start, end);
     }
