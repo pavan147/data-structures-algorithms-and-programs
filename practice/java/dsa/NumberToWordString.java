@@ -44,7 +44,7 @@ public class NumberToWordString {
             Integer thousadPlaceInt = number / 1000;
             String thousadPlaceStr = belowTwenty[thousadPlaceInt] + " Thousand";
             String hundredPlaceStr = number % 1000 == 0 ? "" : converter(number % 1000);
-            return thousadPlaceStr + " "+hundredPlaceStr;
+            return thousadPlaceStr + " " + hundredPlaceStr;
         }
         return "";
     }

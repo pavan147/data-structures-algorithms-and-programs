@@ -12,14 +12,17 @@ public class MoveAllZeroToLast1 {
         int[] array = {1, 4, 6, 0, 2, 0, 8};
         ArrayList<Integer> zeroIndexList = new ArrayList<>();
         for (int i = 0; i < array.length; i++) {
+            //get all 0 value index
             if (array[i] == 0) {
                 zeroIndexList.add(i);
             }
         }
         int incrementList = 0;
         for (int i = array.length - zeroIndexList.size(); i < array.length; i++) {
-
+            //if value is not zero
             if (array[i] != 0) {
+                // replace all non zero element with zero
+                //here we are shifting non-zero value to zero that we calculate in list zeroIndexList
                 int temp = array[i];
                 array[i] = array[zeroIndexList.get(incrementList)];
                 array[zeroIndexList.get(incrementList)] = temp;

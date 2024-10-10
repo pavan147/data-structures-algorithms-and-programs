@@ -7,8 +7,8 @@ import java.util.HashMap;
 public class FindSubArrayIsEqualToSum {
 
     public static void main(String[] args) {
-        int sum = 13;
-        int[] arr = {1, 1, 2, 3, 5, 8, 13};
+        int sum = 6;
+        int[] arr = {1, 2, 3, 2, 4};
         HashMap<Integer, Integer> hashMap = new HashMap();
 
         int currentSum = 0;

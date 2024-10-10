@@ -23,7 +23,7 @@ package practice.java.dsa;
  */
 public class ReverseInteger {
     public static void main(String[] args) {
-        int x = 1534236469;
+        int x = 12345;
         System.out.println(reverse(x));
     }
 

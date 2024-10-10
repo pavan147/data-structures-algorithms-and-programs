@@ -22,5 +22,6 @@ public class RearrangeElementHighestPossibleValue {
                 .collect(Collectors.joining(""));
 
         System.out.println(collect);
+
     }
 }
