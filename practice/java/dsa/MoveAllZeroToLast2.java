@@ -3,7 +3,8 @@ package practice.java.dsa;
 public class MoveAllZeroToLast2 {
 
     public static void main(String[] args) {
-        int[] array = {1,2,0,3,4,0,5,6,7,};
+      //  int[] array = {1,2,0,3,4,0,5,6,7,0,8};
+        int[] array=   {1, 0, 1, 0, 0, 1};
         int lastIndexOfZero = array.length - 1;
         for (int i = 0; i < array.length; i++) {
 

@@ -9,7 +9,8 @@ output- 1,4,6,2,8,0,0
 public class MoveAllZeroToLast1 {
     public static void main(String[] args) {
 
-        int[] array = {1, 4, 6, 0, 2, 0, 8};
+       // int[] array = {1, 4, 6, 0, 2, 0, 8};
+        int[] array = {1, 0, 2, 0, 0, 3};
         ArrayList<Integer> zeroIndexList = new ArrayList<>();
         for (int i = 0; i < array.length; i++) {
             //get all 0 value index

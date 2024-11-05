@@ -15,5 +15,7 @@ public class GroupTheNumberByThereRange {
         Map<Integer, List<Integer>> collect = numbers.stream().collect(Collectors.groupingBy(integer -> integer / 10 * 10));
 
        System.out.println(collect);
+
+        System.out.println( 50 / 10 * 10);
     }
 }
