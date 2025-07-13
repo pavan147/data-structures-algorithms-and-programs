@@ -1,5 +1,7 @@
 package practice.core.java.programs;
 
+import java.util.Arrays;
+
 /**
  * Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
  * <p>
@@ -16,7 +18,7 @@ package practice.core.java.programs;
  */
 public class RotateArray {
     public static void main(String[] args) {
-        int rotate = 100;
+        int rotate = 1;
         int[] array = {1, 2, 3, 4, 5, 6, 7};
         int[] rotateArray = new int[array.length];
         int arrayPositionAfterRotate = rotate % array.length;
@@ -30,8 +32,6 @@ public class RotateArray {
             count++;
         }
 
-        for (Integer integer : rotateArray) {
-            System.out.print(integer + ", ");
-        }
+        System.out.println(Arrays.toString(rotateArray));
     }
 }
