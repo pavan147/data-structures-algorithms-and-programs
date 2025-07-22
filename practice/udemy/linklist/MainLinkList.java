@@ -6,12 +6,10 @@ public class MainLinkList {
         LinkedList list = new LinkedList(4);
         list.append(2);
         list.prepend(10);
-        System.out.println(list.removeFirst().value);
-        System.out.println(list.removeFirst().value);
-        System.out.println(list.removeFirst().value);
-        System.out.println(list.removeFirst());
-        System.out.println("----------------------------------");
+
        list.printList();
+        System.out.println("----------------------------------");
+        System.out.println(list.get(0).value);
     }
 
 }
