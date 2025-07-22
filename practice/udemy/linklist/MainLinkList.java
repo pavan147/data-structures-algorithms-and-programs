@@ -9,7 +9,7 @@ public class MainLinkList {
 
        list.printList();
         System.out.println("----------------------------------");
-        System.out.println(list.set(0,9));
+        System.out.println(list.insert(1 , 100));
         System.out.println("----------------------------------");
         list.printList();
 

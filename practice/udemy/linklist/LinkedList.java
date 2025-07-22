@@ -89,23 +89,46 @@ public class LinkedList {
         return temp;
     }
 
-    public Node get(int index){
-        if(index < 0 || index > length){
+    public Node get(int index) {
+        if (index < 0 || index > length) {
             return null;
         }
-    Node temp = head;
+        Node temp = head;
         for (int i = 0; i < index; i++) {
             temp = temp.next;
         }
         return temp;
     }
 
-    public boolean set(int index , int value){
+    public boolean set(int index, int value) {
         Node temp = get(index);
-        if(temp != null){
+        if (temp != null) {
             temp.value = value;
             return true;
         }
         return false;
+    }
+
+    public boolean insert(int index, int value) {
+
+        if (index < 0 || index > length) {
+            return false;
+        }
+        if (index == 0) {
+            prepend(value);
+        }
+        if (index == length) {
+            append(value);
+        }
+
+        Node newNode = new Node(value);
+        Node temp = get(index - 1);
+
+        newNode.next = temp.next;
+        temp.next = newNode;
+        length++;
+        return true;
+
+
     }
 }
