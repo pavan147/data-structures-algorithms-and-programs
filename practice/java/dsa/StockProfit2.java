@@ -21,6 +21,7 @@ package practice.java.dsa;
  * Output: 0
  * Explanation: In this case, no transactions are done and the max profit = 0.
  */
+  //Note : StockProfit3  this is good solution
 public class StockProfit2 {
     public static void main(String[] args) {
         // int[] prices = {7, 1, 5, 3, 6, 4};

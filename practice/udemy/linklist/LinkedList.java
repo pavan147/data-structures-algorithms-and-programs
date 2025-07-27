@@ -131,9 +131,15 @@ public class LinkedList {
     }
 
     public Node remove(int index) {
-        if (index < 0 || index >= length) return null;
-        if (index == 0) return removeFirst();
-        if (index == length - 1) return removeLast();
+        if (index < 0 || index >= length) {
+            return null;
+        }
+        if (index == 0) {
+            return removeFirst();
+        }
+        if (index == length - 1) {
+            return removeLast();
+        }
 
         Node prev = get(index - 1);
         Node temp = prev.next;
@@ -143,5 +149,24 @@ public class LinkedList {
         length--;
         return temp;
     }
+
+    /**
+     Step1: first swap the head and tail
+     Step2
+     */
+    public void reverse() {
+        Node temp = head;
+        head = tail;
+        tail = temp;
+        Node after = temp.next;
+        Node before = null;
+        for (int i = 0; i < length; i++) {
+            after = temp.next;
+            temp.next = before;
+            before = temp;
+            temp = after;
+        }
+    }
+
 
 }
