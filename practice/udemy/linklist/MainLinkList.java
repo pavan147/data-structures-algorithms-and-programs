@@ -1,18 +1,30 @@
 package practice.udemy.linklist;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 public class MainLinkList {
 
     public static void main(String[] args) {
-        LinkedList list = new LinkedList(4);
-        list.append(2);
-        list.prepend(10);
+        DoublyLinkList list = new DoublyLinkList(2);
 
-       list.printList();
-        System.out.println("----------------------------------");
-        System.out.println(list.insert(1 , 100));
-        System.out.println("----------------------------------");
+       list.append(4);
+        list.append(5);
+        list.prepend(1);
+
+        list.insert(2,3);
+        System.out.println("------------------------------------------");
+
         list.printList();
 
+        list.remove(2);
+        System.out.println("------------------------------------------");
+        list.printList();
+
+
     }
+
+
 
 }
