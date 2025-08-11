@@ -9,7 +9,6 @@ public class DoublyLinkList {
         int value;
         Node next;
         Node prev;
-        Node tail;
 
         Node(int value) {
             this.value = value;
