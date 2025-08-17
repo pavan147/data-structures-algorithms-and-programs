@@ -31,7 +31,7 @@ public class RotateArray {
             rotateArray[i] = array[count];
             count++;
         }
-
+        System.out.println( rotate % array.length);
         System.out.println(Arrays.toString(rotateArray));
     }
 }

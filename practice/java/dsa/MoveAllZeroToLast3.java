@@ -24,6 +24,8 @@ public class MoveAllZeroToLast3 {
                 nonZeroIndex++;
             }
         }
+
+        System.out.println(Arrays.toString(arr));
         // Second loop: Fill the remaining positions with zeros
         while (nonZeroIndex <= arr.length - 1) {
 
