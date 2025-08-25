@@ -1,10 +1,12 @@
 package practice.java.dsa;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class CheckAnagramStringIsPalindromeOrNot {
 
     public static int isPossible(String S) {
+
         HashMap<Character, Integer> charCountMap = new HashMap<>();
 
         // Count occurrences of each character
